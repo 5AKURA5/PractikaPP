@@ -1,0 +1,81 @@
+<!-- activity_employee_request_management.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".worker_activity">
+
+    <TextView
+        android:id="@+id/employee_request_management_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Управление заявками сотрудника"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TableLayout
+        android:id="@+id/request_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+            <TextView android:text="ID"/>
+            <TextView android:text="Номер заявки"/>
+            <TextView android:text="Дата"/>
+            <TextView android:text="Оборудование"/>
+            <TextView android:text="Тип неисправности"/>
+            <TextView android:text="Клиент"/>
+            <TextView android:text="Статус"/>
+            <TextView android:text="ID сотрудника"/>
+            <TextView android:text="Сотрудник"/>
+        </TableRow>
+
+        <!-- Пример строки таблицы -->
+        <TableRow>
+            <TextView android:text="1"/>
+            <TextView android:text="REQ001"/>
+            <TextView android:text="05.01.2025"/>
+            <TextView android:text="Фрезерный станок"/>
+            <TextView android:text="Механическая"/>
+            <TextView android:text="Алексей Иванов"/>
+            <TextView android:text="Выполнено"/>
+            <TextView android:text="6"/>
+            <TextView android:text="Ольга Кузнецова"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/change_status_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Изменить статус"
+        android:textColor="@android:color/white" />
+
+    <Spinner
+        android:id="@+id/status_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/complete_request_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Просмотреть детали" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Назад" />
+</LinearLayout>

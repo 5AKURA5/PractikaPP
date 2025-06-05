@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Основные цвета -->
+    <color name="colorPrimary">#0288D1</color> <!-- Синий цвет для первичного цвета -->
+    <color name="colorPrimaryDark">#0277BD</color>
+    <color name="colorAccent">#FFC107</color> <!-- Желтый цвет для акцента -->
+    <color name="backgroundColor">#ECEFF1</color> <!-- Светло-серый цвет для фона -->
+    <color name="textColor">#000000</color>
+    <color name="buttonColor">#0288D1</color> <!-- Синий цвет для кнопок -->
+    <color name="buttonTextColor">#FFFFFF</color>
+</resources>
